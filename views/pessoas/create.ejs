@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<h1>Nova pessoa</h1>
+<p><a href="/pessoas">Voltar para a lista de pessoas</a></p>
+<form method="post">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" name ='nome' placeholder="Digite seu nome">
+    </div>
+    <div class="mb-3">
+      <label for="nascimento" class="form-label">Data de nascimento</label>
+      <input type="text" class="form-control" id="nascimento" name="nascimento" placeholder="Informe sua data de nascimento">
+    </div>
+    <div class="mb-3">
+      <label for="cargo" class="form-label">Cargo</label>
+      <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Informe seu cargo">
+    </div>  
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </form>
+<%- include('../partials/footer') %>
